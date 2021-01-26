@@ -1,0 +1,108 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "nama": "Handphone"
+    },
+    {
+      "id": 2,
+      "nama": "Tablet"
+    },
+    {
+      "id": 3,
+      "nama": "Accessories"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "kode": "H-01",
+      "nama": "Iphoe12 pro max",
+      "harga": 20000000,
+      "is-ready": true,
+      "gambar": "iphone.png",
+      "category": {
+        "id": 1,
+        "nama": "Handphone"
+      }
+    },
+    {
+      "id": 2,
+      "kode": "T-01",
+      "nama": "Ipad pro",
+      "harga": 15000000,
+      "is-ready": true,
+      "gambar": "ipad.png",
+      "category": {
+        "id": 2,
+        "nama": "Tablet"
+      }
+    },
+    {
+      "id": 3,
+      "kode": "A-01",
+      "nama": "Air Pods",
+      "harga": 4000000,
+      "is-ready": true,
+      "gambar": "airpods.jpeg",
+      "category": {
+        "id": 3,
+        "nama": "Accessories"
+      }
+    }
+  ],
+  "keranjangs": [
+    {
+      "jumlah": 4,
+      "total_harga": 80000000,
+      "product": {
+        "id": 1,
+        "kode": "H-01",
+        "nama": "Iphoe12 pro max",
+        "harga": 20000000,
+        "is-ready": true,
+        "gambar": "iphone.png",
+        "category": {
+          "id": 1,
+          "nama": "Handphone"
+        }
+      },
+      "id": 1
+    },
+    {
+      "jumlah": 2,
+      "total_harga": 30000000,
+      "product": {
+        "id": 2,
+        "kode": "T-01",
+        "nama": "Ipad pro",
+        "harga": 15000000,
+        "is-ready": true,
+        "gambar": "ipad.png",
+        "category": {
+          "id": 2,
+          "nama": "Tablet"
+        }
+      },
+      "id": 2
+    },
+    {
+      "jumlah": 2,
+      "total_harga": 8000000,
+      "product": {
+        "id": 3,
+        "kode": "A-01",
+        "nama": "Air Pods",
+        "harga": 4000000,
+        "is-ready": true,
+        "gambar": "airpods.jpeg",
+        "category": {
+          "id": 3,
+          "nama": "Accessories"
+        }
+      },
+      "id": 3
+    }
+  ],
+  "pesanans": []
+}
