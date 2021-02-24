@@ -4,7 +4,6 @@ import axios from "axios";
 import {API_URL} from '../utils/constant';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMobile, faTablet, faHeadphones} from '@fortawesome/free-solid-svg-icons';
-import changeCategory from '../App';
 
 const Icon = ({nama}) => {
     if(nama === "Handphone") return  <FontAwesomeIcon icon={faMobile} className="mr-2" />
@@ -17,7 +16,6 @@ const Icon = ({nama}) => {
 export default class ListCategories extends Component{ 
     constructor(props) {
         super(props)
-    
         this.state = {
              categories : []
         }
@@ -28,10 +26,10 @@ export default class ListCategories extends Component{
           .get(API_URL + "categories")
           .then(res => {
             const categories = res.data;
-            this.setState({categories})
+            this.setState({categories});
           })
           .catch(error => {
-            console.log(error)
+            console.log("error", error) ;
           })
     }
 
@@ -43,14 +41,14 @@ export default class ListCategories extends Component{
                 <h4 className="text-center"><strong>Daftar Kategori</strong></h4>
                 <hr/>
                 <ListGroup>
-                    {categories && categories.map((category) => 
+                    {categories && categories.map((category) => (
                     <ListGroup.Item 
                         key={category.id} 
                         onClick={() => changeCategory(category.nama)}
                         className={chooseCategory === category.nama && "category-active"}
                         style={{cursor : 'pointer'}} >
                         <Icon nama={category.nama} /> {category.nama}
-                    </ListGroup.Item>)}
+                    </ListGroup.Item>))}
                 </ListGroup>
             </Col>
         )
